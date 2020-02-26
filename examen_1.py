@@ -11,7 +11,7 @@ def calificar ():
         calif = calif +2
     if opcion_2.get() == 1:
         calif = calif +2  
-    txt_final = (str) "Tu calificaciones de: "+calif
+    txt_final = "tu calificacion es de: "+str(calif)
     mBox.showinfo('Calificacion',txt_final)
     print ("hola")
 ventana = tk.Tk()
