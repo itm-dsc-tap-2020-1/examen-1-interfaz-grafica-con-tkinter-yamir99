@@ -1,3 +1,4 @@
+#exmen 1
 import tkinter as tk
 from tkinter import ttk
 from tkinter import scrolledtext
@@ -9,7 +10,7 @@ def calificar ():
         calif = calif+2
     if opcion.get() == 1:
         calif = calif +2
-    if opcion_2.get() == 1:
+    if opcion2.get() == 1:
         calif = calif +2  
     txt_final = "tu calificacion es de: "+str(calif)
     mBox.showinfo('Calificacion',txt_final)
@@ -38,13 +39,13 @@ radio3 = tk.Radiobutton(ventana,text = "1518", variable = opcion, value=2)
 radio3.grid(pady =10,padx=10,column =2, row = 5, sticky = tk.W)
 
 ttk.Label(ventana, text="4.- ¿Nombre del conquistador que derroto al imperio mexica?").grid(pady = 10,padx = 10,column=0,row=6)
-opcion_2 = tk.IntVar()
-radio4 = tk.Radiobutton(ventana,text = "Cristobal Colon", variable = opcion_2, value=2,)
+opcion2 = tk.IntVar()
+radio4 = tk.Radiobutton(ventana,text = "Cristobal Colon", variable = opcion2, value=2,)
 radio4.grid(pady =10,padx=10,column =0, row = 7, sticky = tk.W)
 
-radio5 = tk.Radiobutton(ventana,text = "Hernán cortéz", variable = opcion_2, value=1)
+radio5 = tk.Radiobutton(ventana,text = "Hernán cortéz", variable = opcion2, value=1)
 radio5.grid(pady =10,padx=10,column =1, row = 7, sticky = tk.W)
-radio6 = tk.Radiobutton(ventana,text = "Guadalupe Victoria", variable = opcion_2, value=3)
+radio6 = tk.Radiobutton(ventana,text = "Guadalupe Victoria", variable = opcion2, value=3)
 radio6.grid(pady =10,padx=10,column =2, row = 7, sticky = tk.W)
 radio4.select()
 
